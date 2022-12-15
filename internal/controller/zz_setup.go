@@ -808,6 +808,7 @@ import (
 	principalportfolioassociation "github.com/upbound/provider-aws/internal/controller/servicecatalog/principalportfolioassociation"
 	product "github.com/upbound/provider-aws/internal/controller/servicecatalog/product"
 	productportfolioassociation "github.com/upbound/provider-aws/internal/controller/servicecatalog/productportfolioassociation"
+	provisionedproduct "github.com/upbound/provider-aws/internal/controller/servicecatalog/provisionedproduct"
 	provisioningartifact "github.com/upbound/provider-aws/internal/controller/servicecatalog/provisioningartifact"
 	serviceaction "github.com/upbound/provider-aws/internal/controller/servicecatalog/serviceaction"
 	tagoption "github.com/upbound/provider-aws/internal/controller/servicecatalog/tagoption"
@@ -1713,6 +1714,7 @@ func Setup(mgr ctrl.Manager, o controller.Options) error {
 		principalportfolioassociation.Setup,
 		product.Setup,
 		productportfolioassociation.Setup,
+		provisionedproduct.Setup,
 		provisioningartifact.Setup,
 		serviceaction.Setup,
 		tagoption.Setup,

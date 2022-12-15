@@ -2593,6 +2593,10 @@ var ExternalNameConfigs = map[string]config.ExternalName{
 	//
 	// FIS Experiment Templates can be imported using the id
 	"aws_fis_experiment_template": config.IdentifierFromProvider,
+	// imported using the provisioned product ID,
+	// which has provider-generated random parts:
+	// pp-dnigbtea24ste
+	"aws_servicecatalog_provisioned_product": config.IdentifierFromProvider,
 }
 
 func lambdaFunctionURL() config.ExternalName {
